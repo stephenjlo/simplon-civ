@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Participant index{% endblock %}
+
+{% block body %}
+    <h1>Simplon Côte d’Ivoire / liste de présence</h1>
+    <a href="{{ path('app_participant_new') }}" role="button" class="secondary">Renseigner la liste</a>
+    <table class="table" role="grid">
+        <thead>
+            <tr>
+                {# <th>Id</th> #}
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Téléphone</th>
+                <th>Mail</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for participant in participants %}
+            <tr>
+                {# <td>{{ participant.id }}</td> #}
+                <td>{{ participant.nom }}</td>
+                <td>{{ participant.prenom }}</td>
+                <td>{{ participant.telephone }}</td>
+                <td>{{ participant.mail }}</td>
+                <td>
+                    <a href="{{ path('app_participant_show', {'id': participant.id}) }}">Détails</a>
+                    {# <a href="{{ path('app_participant_edit', {'id': participant.id}) }}">Modifier</a> #}
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">Aucun enregistrement</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    {# <a href="{{ path('app_participant_new') }}">Create new</a> #}
+{% endblock %}
