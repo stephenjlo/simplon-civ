@@ -1,6 +1,14 @@
 
 ###> symfony/framework-bundle ###
 /.env
+/composer.phar
+/docker-compose.override.yml
+/docker-compose.yml
+/error_log
+/node
+/package.json
+/symfony.lock
+/webpack.config.js
 /.env.local
 /.env.local.php
 /.env.*.local
