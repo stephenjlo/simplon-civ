@@ -1,6 +1,0 @@
-[22-Jan-2023 22:02:15 UTC] [critical] Error thrown while running command "'m:e'". Message: "There are no commands defined in the "m" namespace."
-[22-Jan-2023 22:02:27 UTC] [critical] Error thrown while running command "'make:entity'". Message: "There are no commands defined in the "make" namespace.
-
-You may be looking for a command provided by the "MakerBundle" which is currently not installed. Try running "composer require symfony/maker-bundle --dev"."
-[22-Jan-2023 22:14:52 UTC] [critical] Error thrown while running command "crud". Message: "Class "PHPUnit\Framework\TestCase" not found"
-[22-Jan-2023 22:14:52 UTC] 2023-01-22T22:14:52+00:00 [critical] Uncaught Error: Class "PHPUnit\Framework\TestCase" not found
